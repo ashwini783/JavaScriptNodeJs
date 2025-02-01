@@ -74,4 +74,3 @@ app.use((req,res)=>{ //if invalid path come
     console.log(`server is running port ${PORT}`)
    })
    //Ca6mFxOS99N0VPuv
-   //mongodb+srv://ashwiniavhad8:Ca6mFxOS99N0VPuv@cluster0.khztu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
