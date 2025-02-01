@@ -66,8 +66,12 @@ app.get('/',(req,res)=>{ //when client sends request, everything will come in re
       res.json(users)  //sending all users back to Client i.e postman response
   })
 
-
+app.use((req,res)=>{ //if invalid path come
+    res.status(404).send("page not fount")
+})
     const PORT=3000;
   app.listen(PORT,()=>{
     console.log(`server is running port ${PORT}`)
    })
+   //Ca6mFxOS99N0VPuv
+   //mongodb+srv://ashwiniavhad8:Ca6mFxOS99N0VPuv@cluster0.khztu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
