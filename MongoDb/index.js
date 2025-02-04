@@ -5,7 +5,7 @@ const dbUrl='mongodb+srv://ashwiniavhad8:Ca6mFxOS99N0VPuv@cluster0.khztu.mongodb
 
 const app=express()
   app.use(express.json());
-  
+
 mongoose.connect(dbUrl).then(()=>{
     console.log("connected to Db")
 }).catch((err)=>{
@@ -99,6 +99,7 @@ mongoose.connect(dbUrl).then(()=>{
       await ProductModel.findByIdAndUpdate(req.params.id,req.body)
 
       return res.status(200).json({message:"Prduct Updated"})
+      
   })
 
   app.delete('/api/product/:id',async(req, res)=>{
