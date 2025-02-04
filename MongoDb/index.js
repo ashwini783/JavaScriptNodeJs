@@ -4,7 +4,8 @@ const dbUrl='mongodb+srv://ashwiniavhad8:Ca6mFxOS99N0VPuv@cluster0.khztu.mongodb
     
 
 const app=express()
-  app.use(express.json())
+  app.use(express.json());
+  
 mongoose.connect(dbUrl).then(()=>{
     console.log("connected to Db")
 }).catch((err)=>{
