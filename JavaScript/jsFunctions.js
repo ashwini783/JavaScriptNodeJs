@@ -15,7 +15,9 @@ const serveDrink=(drink)=>{
 serveDrink("tea")
 
 function addNum(a,b){
-    console.log(a+b);
+    if(typeof a=='number' && typeof b=='number'){
+        return a+b
+    }
 }
 addNum(2,3)
 
