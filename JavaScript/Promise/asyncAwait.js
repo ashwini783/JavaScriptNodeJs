@@ -27,6 +27,7 @@ let p2=new Promise((resolve)=>{
         resolve("Promise Resolved P2")
     },10000)
 })
+//below function will be suspended from CallStack for 10 sec i.e took out of callStack and after some time it will come back again in callStack~
 async function resolvePromise2(){ //for 10sec resolvePromise2() function is suspended from callStack so that other function will get executed
     console.log("Hello World")
     let data1=await p2;
