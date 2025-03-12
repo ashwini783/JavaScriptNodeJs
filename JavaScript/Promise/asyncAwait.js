@@ -6,7 +6,7 @@ async function printData(){  //it returns the data wrapped inside promise
     return "I Am Promise"
 }
 let data=printData();
-// console.log(data)
+// console.log(data)  output=  Promise { 'I Am Promise' }
 
 //==========
 let p1=new Promise((resolve)=>{
