@@ -3,7 +3,7 @@
 // a=3;  
 // console.log(a) //ReferenceError: a is not defined , if we dont use 'use strict' it will print a=3
 
-//1. Globally-gives us Window object
+//1. Globally-gives us Window object in Browser and empty object{} on NodeJs
 console.log(this)
 
 //2.Inside Function it gives undefined
@@ -34,3 +34,9 @@ let obj2={
     }
 }
 obj2.fn()
+
+let a=30;
+function demo(){
+    console.log("a ",this.a);  //TypeError: Cannot read properties of undefined (reading 'a')
+}
+// demo()
