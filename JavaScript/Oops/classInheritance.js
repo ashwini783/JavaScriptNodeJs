@@ -33,6 +33,8 @@ class Car{
  const car1=new Car('Mercedes','G-Wagon','Red','300km/hr')
  
  const car2=new Car('Tata','Punch','Black','200km/hr')
+ console.log(car1)
+ console.log(car2)
  Car.compareSpeed(car1,car2)
  const evCar=new ElectricCar('Tesla','Models-S','White','200km/hr','100kwh','3hrs')
  console.log(evCar)
