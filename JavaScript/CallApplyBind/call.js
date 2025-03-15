@@ -38,7 +38,7 @@ const person1={
    person11.printNameAge("mumbai",'Tester')
    person11.printNameAge.call(person22,'Pune',"Developer")  //borrowed for person22 from person11
 
-   //another way of calling global object using call() method
+   //another way of calling global method using call() method when we want to borrow global method
    function displayInfo(location,occupation){
     console.log(`My Name is ${this.name} and age is ${this.age} ,I live in ${location} and I am ${occupation}`)
   }
