@@ -1,3 +1,21 @@
+const person1={
+  name:"Ashu",
+  age:23,
+  printDetails:function(hobbies1,hobbies2){
+      console.log(`My Name is ${this.name} and age is ${this.age} ,I love ${hobbies1}, ${hobbies2}`)
+    }
+}
+
+const person2={
+  name:"Adam",
+  age:25
+}
+let pd=person1.printDetails.bind(person2)  //bind method wont call printDetails() it just store it
+pd('swimming','reading') //we can call it whenever we want, we can pass the arguments here
+console.log(pd)
+
+
+
 const pikaChu={
     firstName:"Ashwini",
     lastName:"Avhad",
