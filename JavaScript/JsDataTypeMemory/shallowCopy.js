@@ -9,7 +9,7 @@ let zoo1={
 // let zoo2=zoo1  //wrong way of making copy
 //shallow copy
 //spread operator creates different copy for your object
-let zoo1shallowCopy={...zoo1}
+let zoo1shallowCopy={...zoo1} 
 //shallow copy handles the top layer only, 
 zoo1shallowCopy.location="Kerala India"
 zoo1.animals[1].species="Elephant" //shallow copy only handles the first layer of your object, it cant handle nested properties
@@ -19,7 +19,7 @@ zoo1.animals[1].species="Elephant" //shallow copy only handles the first layer o
 //deep copy
 let zooString=JSON.stringify(zoo1) //now this is separate string
 console.log(zooString)
-let deepCopy=JSON.parse(zooString) //JSON.parse will again create separate object
+let deepCopy=JSON.parse(zooString) //JSON.parse will again create separate object,new reference for object created
 deepCopy.animals[0].species="Tiger";
 deepCopy.location="Kerala India"
 console.log(zoo1)
