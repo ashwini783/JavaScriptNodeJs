@@ -30,8 +30,8 @@ let promise1=[
     Promise.resolve(2),
     Promise.resolve(3)
 ]
-Promise.myAll([promise1]).then((results)=>{
-    console.log("Result is ",results[0])
+Promise.myAll(promise1).then((results)=>{
+    console.log("Result is ",results)
 }).catch((error)=>{
     console.log('Error ',error)
 })
