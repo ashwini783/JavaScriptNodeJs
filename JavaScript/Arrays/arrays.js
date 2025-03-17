@@ -40,3 +40,14 @@ let spliceElem=cars3.splice(4,1)
 console.log(spliceElem)
 
 
+//push polyfills added
+let arr=[12,22,3,4,35,16];
+// console.log(arr.push(2))
+
+Array.prototype.myPush=function(ele){
+      let n=this.length;
+      this[n]=ele
+      return this.length
+}
+console.log(arr.myPush(33))
+
