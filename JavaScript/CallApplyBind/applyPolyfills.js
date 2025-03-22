@@ -1,6 +1,6 @@
 
 Function.prototype.myApply=function(context={},args=[]){  //...args suggest that u can add whatever number of parameter
-   console.log(this) //it will point to method to which myCall() is attached
+   console.log(this) //it will point to method to which myApply() is attached
    if(typeof this !='function'){
         throw new Error('cant be called')
    }
@@ -26,7 +26,7 @@ const person2={
 }
 person1.printDetails.myApply(person2,["Pune"])
 person1.printAge.myApply(person2)
-
+console.log(person2)
 //person2 is context
 //this-printDetails
 // person2.myFunction=this
