@@ -32,7 +32,7 @@ function Car1(Brand,Model,Year){
 }
 //we will attach displayInfo() method to constructor level prototype
 Car1.prototype.displayInfo=function(){
-    return `This is a ${this.brand} ${this .model} ${this.year} model`
+    return `This is a ${this.brand} ${this.model} ${this.year} model`
 }
 let car11=new Car1("Tata","Altroz",'2021')
 let car22=new Car1("Mercedes","X-6",'2018')
@@ -49,8 +49,8 @@ console.log(car11.print())
 // console.log(Car1.prototype.__proto__.__proto__) //null
 
 function Animal(){
-
+  
 }
-let animal1=new Animal()
+let animal1 = new Animal()
 console.log(animal1.print())
  
