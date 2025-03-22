@@ -41,7 +41,7 @@ const person2={
 }
 person1.printDetails.myCall(person2,"Delhi")
 person1.printAge.myCall(person2)
-
+console.log(person2)
 //person2 is context
 //this-printDetails
 // person2.myFunction=this
