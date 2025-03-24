@@ -1,8 +1,11 @@
 //ByMrunal
 const http = require("http"); //http is module and https is protocol
-const fs = require("fs");
+const fs = require("fs"); //its inbuilt module of node js , no need to install
+const url=require('url')
 const server = http.createServer((req, res) => {
   // res.end("Hello From Http Server")
+  const parsedUrl=url.parse(req.url,true) //it parses the url
+  console.log("parsed url ",parsedUrl)
   const log = `${req.url} Request received\n`;
   fs.appendFile("log.txt",log, (err, data) => { //all loges will be added in log.txt file
     switch (req.url) {

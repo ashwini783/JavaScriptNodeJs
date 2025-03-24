@@ -2,3 +2,13 @@
 /favicon.ico Request received
 / Request received
 /favicon.ico Request received
+/?shooe=nike Request received
+/favicon.ico Request received
+/?shooe=nike Request received
+/favicon.ico Request received
+/about Request received
+/favicon.ico Request received
+/about Request received
+/favicon.ico Request received
+/about Request received
+/favicon.ico Request received
