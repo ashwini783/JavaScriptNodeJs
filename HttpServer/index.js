@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
   console.log("parsed url ",parsedUrl)
   const log = `${req.url} Request received\n`;
   fs.appendFile("log.txt",log, (err, data) => { //all loges will be added in log.txt file
-    switch (req.url) {
+    switch (parsedUrl.pathname) {
       case "/":
         res.end("this is my home page!");
         break;
@@ -18,6 +18,10 @@ const server = http.createServer((req, res) => {
       case "/contact":
         res.end("this is my contact page!");
         break;
+        case "/products":
+            const shoe=parsedUrl.query.shoe
+            res.end("This is my product page "+" here your shoes "+shoe)
+            break;
       default:
         res.end("Not Found");
     }

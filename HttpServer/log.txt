@@ -12,3 +12,8 @@
 /favicon.ico Request received
 /about Request received
 /favicon.ico Request received
+/about?shoes=woodland Request received
+/favicon.ico Request received
+/products?shoe=adidas Request received
+/products?shoe=adidas Request received
+/favicon.ico Request received
